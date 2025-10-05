@@ -76,7 +76,7 @@ const AppRouter = () => (
     />
 
     {/* Fallback */}
-    <Route path="*" element={<Navigate to="/login" />} />
+    <Route path="*" element={<Navigate to="/register" />} />
   </Routes>
 );
 
