@@ -10,6 +10,7 @@ import AgentDashboard from '../pages/AgentDashboard';
 import AdminDashboard from '../pages/AdminDashboard';
 import NewTicketPage from '../pages/NewTicketPage';
 import TicketDetailPage from '../pages/TicketDetailPage';
+import TestCredentials from '../pages/TestCredentials';
 
 // PrivateRoute checks authentication
 const PrivateRoute = ({ children }) => {
@@ -30,6 +31,7 @@ const AppRouter = () => (
     {/* Public Routes */}
     <Route path="/login" element={<LoginPage />} />
     <Route path="/register" element={<RegisterPage />} />
+    <Route path="/test" element={<TestCredentials />} />
 
     {/* Dashboards */}
     <Route

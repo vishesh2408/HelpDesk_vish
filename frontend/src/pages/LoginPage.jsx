@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../hooks/useAuth';
 
+
 const LoginPage = () => {
   const { login } = useAuth();
   const navigate = useNavigate();
@@ -67,6 +68,7 @@ const LoginPage = () => {
           />
           <button type="submit" style={styles.button} onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}>Login</button>
           <p>Don't have an account? <a href="/register">Register</a></p>
+          <p><a href="/test">Test Credentials</a></p>
         </form>
       </div>
     </div>
